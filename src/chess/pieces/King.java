@@ -95,8 +95,7 @@ public class King extends ChessPiece {
 				Position farLeftPosition = new Position(position.getRow(), position.getColumn() - 1);
 				Position leftPosition = new Position(position.getRow(), position.getColumn() - 2);
 				Position centerLeftPosition = new Position(position.getRow(), position.getColumn() - 3);
-
-				if (getBoard().piece(farLeftPosition) == null && getBoard().piece(leftPosition) == null
+ 				if (getBoard().piece(farLeftPosition) == null && getBoard().piece(leftPosition) == null
 						&& getBoard().piece(centerLeftPosition) == null) {
 					mat[position.getRow()][position.getColumn() - 2] = true;
 				}
